@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    }
+</style>
+<body>
+<audio autoplay loop muted id="bg-music">
+  <source src="Gaskin.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', () => {
+    const music = document.getElementById('bg-music');
+    music.muted = !music.muted;
+  });
+</script>
+<canvas id="World" width="1000" height="1000"></canvas>
+<script src="scriptFloor2.js"></script>
+</body>
+</html>
